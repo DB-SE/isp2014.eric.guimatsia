@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and mandatory="true" name="miniChat">
+				<alt mandatory="true" name="ConnectionMode">
+					<feature mandatory="true" name="UDP"/>
+					<feature mandatory="true" name="TCP"/>
+				</alt>
+				<alt mandatory="true" name="ClentListFile">
+					<feature mandatory="true" name="txt"/>
+					<feature mandatory="true" name="xml"/>
+				</alt>
+				<or name="Options">
+					<feature mandatory="true" name="DBforMsg"/>
+					<feature mandatory="true" name="GUI"/>
+					<feature mandatory="true" name="GroupChat"/>
+				</or>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
